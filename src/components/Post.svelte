@@ -1,6 +1,7 @@
 <script>
   import readingTime from './../utils/readingTime'
   import randomEmoji from './../utils/randomEmoji'
+  import formatIsoTime from './../utils/formatIsoTime'
   export let post; // Heredar elementos de su padre utilizamos export let
 </script>
 
@@ -12,7 +13,7 @@
           <a rel="prefetch" href="blog/{post.slug}">{randomEmoji()} {post.title}</a>
         </h2>
         <p>
-          <time datetime={post.createdAt}>{post.createdAt}</time>
+          <time datetime={post.createdAt}> 📅 {formatIsoTime(post.createdAt)}</time>
           <span class="dot">.</span>
           <span>{readingTime(post.html)}</span>
         </p>
