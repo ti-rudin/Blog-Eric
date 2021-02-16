@@ -1,3 +1,7 @@
+<script>
+  import analyticsTracking from '../utils/analytics'
+</script>
+
 <header class="Header">
   <div class="Header-container">
     <div class="Header-content">
@@ -9,17 +13,17 @@
       <div class="Header-social">
         <ul>
           <li>
-            <a href="/" target="_blank" rel="noreferrer">
+            <a href="/" target="_blank" rel="noreferrer" on:click={analyticsTracking('github')}>
               <img src="github-icon.png" alt="GitHub">
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" rel="noreferrer">
+            <a href="/" target="_blank" rel="noreferrer" on:click={analyticsTracking('facebook')}>
               <img src="facebook-icon.png" alt="Facebook">
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" rel="noreferrer">
+            <a href="/" target="_blank" rel="noreferrer" on:click={analyticsTracking('instagram')}>
               <img src="instagram-icon.png" alt="Instagram">
             </a>
           </li>
