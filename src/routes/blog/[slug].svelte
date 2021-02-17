@@ -1,7 +1,5 @@
 <script context="module">
 	export async function preload({ params }) {
-		// the `slug` parameter is available because
-		// this file is called [slug].svelte
 		const res = await this.fetch(`blog/${params.slug}.json`);
 		const data = await res.json();
 
@@ -14,9 +12,26 @@
 </script>
 
 <script>
+	import { onMount } from 'svelte';
 	import readingTime from './../../utils/readingTime'
 	import formatIsoTime from './../../utils/formatIsoTime'
 	export let post;
+
+	const disqus = () => {
+
+		if(document.readyState === 'complete') {
+			let d = document, s = d.createElement('script');
+			s.src = 'https://ericgomezlive.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		}
+
+  }
+	
+	onMount(async () => {
+		 await disqus();
+	});
+
 </script>
 
 <style>
@@ -62,6 +77,7 @@
 	
 	
 	<div class="comments">
+		<div id="disqus_thread" />
 	</div>
 
 </div>
