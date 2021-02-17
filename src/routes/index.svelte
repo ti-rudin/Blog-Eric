@@ -17,7 +17,7 @@
   <title>Eric Gomez</title>
   <meta name="description" content="Blog de ericgomez live">
   
-  <meta name="twitter:card" content="summary_larga_image">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ericgomezmx">
   <meta name="twitter:creator" content="@ericgomezmx">
   <meta name="twitter:title" content="Eric Gomez">
