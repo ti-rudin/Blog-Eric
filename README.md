@@ -1,4 +1,10 @@
-# Blog-Eric
+# Clases del Curso de Desarrollo Web con Svelte y Sapper
+#### Proyecto del curso
+
+![proyect](https://static.platzi.com/media/landing-projects/svelteproject.png)
+
+## Blog-Eric
+Construye un blog con sistema de likes, comentarios, newsletter y analytics usando Svelte y Sapper. Consume la API de Ghost CMS e integra herramientas como Discus, Google Analytics y Cloudflare DNS.
 
 The default template for setting up a [Sapper](https://github.com/sveltejs/sapper) project. Can use either Rollup or webpack as bundler.
 
